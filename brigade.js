@@ -4,7 +4,10 @@ events.on("push", (e, p) => {
   console.log(e.payload)
 })
 
-events.on("check_suite", (e, p) => {
+events.on("check_suite:requested", (e, p) => {
+  console.log(e.payload)
+})
+events.on("check_suite:rerequested", (e, p) => {
   console.log(e.payload)
 })
 
