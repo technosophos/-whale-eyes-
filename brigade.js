@@ -9,6 +9,10 @@ events.on("push", (e, p) => {
 events.on("check_suite:requested", checkRequested)
 events.on("check_suite:rerequested", checkRequested)
 
+// Since we are doing only one check, we can run the same check as we do with
+// the suite.
+events.on("check_run:rerequested", checkRequested)
+
 function checkRequested(e, p) {
   console.log("check requested")
   // Common configuration
