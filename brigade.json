@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "mocha": "5.2.0",
-    "chai": "4.1.2"
+    "chai": "4.1.2",
+    "left-pad": :".3.0"
   }
 }
